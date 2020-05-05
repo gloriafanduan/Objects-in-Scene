@@ -2,19 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>360&deg; Image</title>
-    <meta name="description" content="360&deg; Image - A-Frame" />
+    <title>What's not real about virtual reality when we're living in a Bonsai Paradox?</title>
+    <meta name="description" content="What's not real about virtual reality when we're living in a Bonsai Paradox?" />
     <script src="assets/js/aframe-master.js"></script>
   </head>
   <body>
     <a-scene>
       <a-assets>
         <img scr="assets/images/gallery.jpg" id="photo" />
-         <video id="penguin-sledding" autoplay loop="true" src="https://www.youtube.com/embed/qqnAwG1AU7k"></video>
+         <video id="fallingelephant" autoplay loop="true" src="assets/video/fallingelephant.mov"></video>
         
         <audio
           id="soundtrack"
-          src="https://cdn.glitch.com/7b99c94e-6e53-4ece-96ec-77810e6587ee%2Flatelate%20-%204_24_20%2C%208.07%20AM.m4a?v=1588263195715"
+          src="assets/music/grace-audio.m4a"
           preload="auto"
         ></audio>
       </a-assets>
@@ -23,7 +23,7 @@
        
       </a-entity>
 
-<a-sphere color="black" position="-5.36189 5.67422 14.19291" material="src: assets/images/vr-image-test1.jpg; shader: ios10hls" geometry="primitive: plane" scale="21.07448 12.71225 10" rotation="0 155 0">
+<a-sphere color="black" position="-5.36189 5.67422 14.19291" material="src: assets/video/fallingelephant.mov; shader: ios10hls" geometry="primitive: plane" scale="21.07448 12.71225 10" rotation="0 155 0">
         <a-animation attribute="visible" to="false" begin="click"></a-animation>
       </a-sphere>
       
