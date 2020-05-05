@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Hello, WebVR! • A-Frame</title>
-    <meta name="description" content="Hello, WebVR! • A-Frame">
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <meta charset="utf-8" />
+    <title>360&deg; Image</title>
+    <meta name="description" content="360&deg; Image - A-Frame" />
+    <script src="assets/js/aframe-master.js"></script>
   </head>
   <body>
-    <a-scene background="color: #FAFAFA">
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" shadow></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+    <a-scene>
+      <a-assets>
+        <img scr="assets/images/gallery.jpg" id="photo" />
+         <video id="penguin-sledding" autoplay loop="true" src="https://www.youtube.com/embed/qqnAwG1AU7k"></video>
+        
+        <audio
+          id="soundtrack"
+          src="https://cdn.glitch.com/7b99c94e-6e53-4ece-96ec-77810e6587ee%2Flatelate%20-%204_24_20%2C%208.07%20AM.m4a?v=1588263195715"
+          preload="auto"
+        ></audio>
+      </a-assets>
+
+      <a-entity camera look-controls position="0 0 0">
+       
+      </a-entity>
+
+<a-sphere color="black" position="-5.36189 5.67422 14.19291" material="src: assets/images/vr-image-test1.jpg; shader: ios10hls" geometry="primitive: plane" scale="21.07448 12.71225 10" rotation="0 155 0">
+        <a-animation attribute="visible" to="false" begin="click"></a-animation>
+      </a-sphere>
+      
+      <a-sky src="assets/images/gallery.jpg" rotation="0 -130 0"></a-sky>
+      <a-text
+        font="ariel"
+        value="What's not real about VR?"
+        width="6"
+        position="0 0 0"
+        rotation="0 15 0"
+      ></a-text>
+      
+      
+      
     </a-scene>
   </body>
 </html>
